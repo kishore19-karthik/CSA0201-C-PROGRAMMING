@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int exp, perf;
+    scanf("%d %d", &exp, &perf);
+    if (exp < 3) {
+        printf("Level: Junior");
+    } else if (exp >= 3 && exp <= 7) {
+        if (perf >= 80) {
+            printf("Level: Mid-Level");
+        } else {
+            printf("Level: Junior");
+        }
+    } else {
+        if (perf >= 85) {
+            printf("Level: Senior");
+        } else {
+            printf("Level: Mid-Level");
+        }
+    }
+    return 0;
+}
